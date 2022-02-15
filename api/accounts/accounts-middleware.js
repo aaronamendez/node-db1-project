@@ -8,6 +8,7 @@ exports.checkAccountPayload = (req, res, next) => {
 	if (name !== undefined && budget !== undefined) {
 		if (name.trim().length >= 3 && name.trim().length <= 100) {
 			if (typeof budget === 'number' && !isNaN(budget)) {
+				console.log(typeof budget);
 				if (budget > 0 && budget < 1000000) {
 					res.json('Works!');
 				} else {

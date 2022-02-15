@@ -10,7 +10,7 @@ SELECT phone FROM suppliers WHERE supplierid IS;
 SELECT * FROM orders ORDER BY orderdate DESC LIMIT 10;
 
 -- Find all customers that live in London, Madrid, or Brazil
-SELECT * FROM [Customers] where city = 'Madrid' OR city = 'London' OR city = 'Brazil';
+SELECT * FROM [Customers] where city = 'Madrid' OR city = 'London' OR country = 'Brazil';
 
 -- Add a customer record for "The Shire", the contact name is "Bilbo Baggins" the address is -"1 Hobbit-Hole" in "Bag End", postal code "111" and the country is "Middle Earth"
 INSERT INTO customers (customername, contactname, address, city, postalcode, country) VALUES ("The Shire", "Bilbo Baggins", "1 Hobbit-Hole", "Bag End", "111", "Middle Earth");
